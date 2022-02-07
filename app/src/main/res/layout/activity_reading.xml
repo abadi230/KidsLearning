@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.abadi.myproject_v1.ReadingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/L1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtRead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="TextView"
+                android:textSize="36sp " />
+
+            <ImageButton
+                android:id="@+id/img1"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:onClick="buimg1"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/a" />
+
+            <ImageButton
+                android:id="@+id/img2"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+
+                android:layout_gravity="center"
+                android:adjustViewBounds="false"
+                android:onClick="buimg2"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/b" />
+
+            <ImageButton
+                android:id="@+id/img3"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="false"
+                android:onClick="buimg3"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/c" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
